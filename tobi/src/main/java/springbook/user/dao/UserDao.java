@@ -22,7 +22,7 @@ public class UserDao {
 		this.dataSource = dataSource;
 	}
 
-	public void setConnectionMaker(DataSource dataSource) {
+	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
 
