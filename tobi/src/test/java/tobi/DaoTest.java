@@ -59,13 +59,14 @@ public class DaoTest {
 		assertThat(user2.getPassword(), is(user.getPassword()));
 
 		// 삭제
-		dao.delete(user.getId());
+		dao.deleteAll();
 		assertThat(dao.getCount(), is(0));
 	}
 
 	@Test
 	public void count() throws SQLException, ClassNotFoundException {
 		dao.deleteAll();
+		
 		assertThat(dao.getCount(), is(0));
 
 		dao.add(user1);
